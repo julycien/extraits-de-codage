@@ -1,0 +1,187 @@
+        body {
+                background-image: url("../msrBikeAdmin/boundaries/images/fonds/motomsrbike12.jpg");
+                background-attachment:fixed;
+                background-size: cover;
+                margin: 0;
+                border: none;
+                color: white;
+                margin-left: 0px;
+                font-family: Verdana, Tahoma, Helvetica Neue, sans-serif;
+            }
+            .titre {
+                font-size: 5em;
+                text-align: center;
+                padding: 8%;
+            }
+
+            .hline {
+                width: 50%;
+                height: 5px;
+                background-color: red;
+                margin-right: auto;
+                margin-left: auto;
+                margin-top: 5px;
+                margin-bottom: 40px;
+                animation: fadein 2s;
+            }
+            @keyframes fadein {
+                from {
+                    opacity:0;
+                }
+                to {
+                    opacity:1;
+                }
+            }
+            .container {
+                display: flex;
+                max-width: 100%;
+                justify-content: space-around;
+            }
+            .formulairecontact {
+                display: flex;
+                flex-wrap: nowrap;
+                max-width: 100%;
+                padding: 3%;
+            }
+            .divlabel {
+                display: flex;
+                flex-wrap: wrap;
+
+            }
+            label, h3 {
+                width: 300px;
+                font-size: 1.2em;
+                font-weight: bold;
+            }
+            input, textarea { 
+                border-radius: 0.5em;
+                border-color: grey;
+            }
+            #titresaisie {
+                font-size: 1.2em;
+                font-weight: bold;
+            }
+            .coordonnees {
+                max-width: 100%;
+                padding: 5%;
+            }
+            footer {
+                margin-top: 1000px;
+            }
+            /* The Modal (background) */
+            #myModal {
+                margin-left: 100px;
+                margin-top: 150px;
+                width: 800px;
+                height: auto;
+                background-color: #FFA07A; 
+                border-radius: 10px;
+            }
+            .modal {
+                display: none; /* Hidden by default */
+                position: fixed; /* Stay in place */
+                z-index: 1; /* Sit on top */
+                left: 0;
+                top: 0;
+                width: 100%; /* Full width */
+                height: 100%; /* Full height */
+                overflow: auto; /* Enable scroll if needed */
+                background-color: rgb(0,0,0);
+            }
+            /* Modal Content/Box */
+            .modal-content {
+                background-color: #fefefe;
+                margin: 5% auto; /* 15% from the top and centered */
+                padding: 20px;
+                border: 1px solid #888;
+                width: 80%; /* Could be more or less, depending on screen size */
+                color: black;
+            }
+            /* The Close Button */
+            .close {
+                color: #aaa;
+                float: right;
+                font-size: 20px;
+                font-weight: bold;
+            }
+
+            .close:hover,
+            .close:focus {
+                color: black;
+                text-decoration: none;
+                cursor: pointer;
+            }
+
+            @media screen and (max-width: 64em) {
+                .titre {
+                    font-size: 3em;
+                }
+                .hline {
+                    height: 2px;
+                }
+                .container {
+                    display: flex;
+                    flex-wrap: wrap;
+                    align-items: center;
+                    justify-content: space-around;
+                }
+                .formulairecontact {
+                    display: flex;
+                    flex-wrap: wrap;
+                }
+                .idframeadresse {
+                    width: 400px;
+                    height: 400px;
+                }
+                .divlabel {
+                    flex-direction: column;
+                }
+                #myModal {
+                    margin: 10% auto;
+                    width: 90%;
+                    width: 500px;
+                }
+                .modal-content {
+                    margin: 5% auto; /* 15% from the top and centered */
+                    padding: 2%;
+                    font-size: 0.6em;
+                }
+            }
+
+            @media screen and (max-width: 50em) {
+                .titre {
+                    font-size: 2em;
+                }
+                .hline {
+                    height: 1px;
+                }
+                #myModal {
+                    margin: 5% auto;
+                    width: 70%;
+                }
+                .modal-content {
+                    margin: 5% auto; /* 15% from the top and centered */
+                    padding: 2%;
+                    font-size: 0.4em;
+                }
+            }
+            @media screen and (max-width: 30em) {
+                .titre {
+                    font-size: 1.5em;
+                }
+                .idframeadresse {
+                    width: 30px;
+                    height: 100px;
+                }
+                #myModal {
+                    width: 90%;
+                    margin-top: 10px;
+                    margin-left: 10px;
+                }
+                .modal-content {
+                    margin: 2% auto; /* 15% from the top and centered */
+                    padding: 2%;
+                    width: 90%; /* Could be more or less, depending on screen size */
+                    font-size: 1em;
+                }
+            }
